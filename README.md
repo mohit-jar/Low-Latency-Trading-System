@@ -4,9 +4,6 @@ This application is a low-latency trading system developed in C++ that interface
 
 The main aim of this Order Mangement System (OMS) will not be to simply send, recieve or stream communicable data with Deribit's server but to actually implement optimisations to reduce latency.
 
-I would recommend using VS Code due to it's feature rich interface.
-
-You can have a look at video explanation of the codebase here : https://drive.google.com/drive/folders/1j9_-WpCXGKoM0Dp7XO3bgiLewI-P7mbH?usp=sharing
 
 ## Prerequisites
 
@@ -24,20 +21,6 @@ Skip to the end of (4) if you are more interested in the implementation choices,
 ---
 
 ## 1. Install Dependencies
-
-### Ubuntu / Debian
-
-```bash
-sudo apt update
-sudo apt install -y cmake g++ libcurl4-openssl-dev libssl-dev
-```
-
-You will also need to manually install the following header-only libraries (if not already present):
-
-- WebSocket++: https://github.com/zaphoyd/websocketpp
-- nlohmann/json: https://github.com/nlohmann/json
-
-You can place these headers in an `external/` directory and include them manually in your project.
 
 ### macOS (with Homebrew)
 
@@ -95,8 +78,6 @@ target_link_libraries(rest_order
 )
 
 ```
-
-Note: Modify the source file paths according to your actual project structure.
 
 ---
 
